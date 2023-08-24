@@ -1,0 +1,62 @@
+.ContactUs{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    .container{
+    width: 60%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    .upper-part{
+        background-color: #2d62a8;
+          display: flex;
+         flex-direction: column; 
+         justify-content: center;
+            .heading{
+                color: white;
+            }
+            .subheading{
+                color: white;
+            
+            }  
+    }
+    .down-part{
+        display: flex;
+        background-color: #d176ca;
+        justify-content: center;
+        text-align: center;
+        .form{
+            height: 60vh;
+            justify-content: center;
+            text-align: center;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        input{
+            margin-top: 10px;
+            height: 2rem;
+        }
+        .btn-submit{
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            background: #f6783a;
+            color: #fff;
+            padding: 18px 30px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            border-radius: 50px;
+            // min-width: 170px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            width: fit-content;
+            margin-top: 10px;
+        }
+    }
+}
+    }
+}

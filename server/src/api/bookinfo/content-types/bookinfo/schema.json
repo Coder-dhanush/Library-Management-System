@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookinfos",
+  "info": {
+    "singularName": "bookinfo",
+    "pluralName": "bookinfos",
+    "displayName": "Bookinfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "bookinfos"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "key": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "isTopPick": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

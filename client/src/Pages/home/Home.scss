@@ -1,0 +1,29 @@
+.Home{
+    .container{
+        max-width: 1200;
+         margin: 0 auto;
+         padding:0 20px;
+         overflow: hidden;
+        }
+    .collection{
+        margin-top:80px;
+        width: 100%;
+
+        .info{
+            text-align: center;
+            padding-bottom: 10px;
+            // .subheading{
+            //     margin-top: 10px;
+            // }
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 40px;
+            margin-top: 20px;
+             column-gap: 20px;
+        }
+        }
+}
